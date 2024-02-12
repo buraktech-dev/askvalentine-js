@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 50rem;
+}
+
+.gif {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 30px;
+    visibility: hidden;
+}
+
+.buttoncontainer {
+    position: relative;
+}
+
+#moveButton {
+    position: absolute;
+    visibility: visible;
+    margin-left: 20px;
+}
