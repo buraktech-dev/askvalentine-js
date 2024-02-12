@@ -1,7 +1,7 @@
 const moveButton = document.getElementById("moveButton");
 const yesButton = document.getElementById("yesButton");
 const question = document.getElementById("question");
-const gif = document.querySelector(".gif");
+const gif = document.getElementById("gif");
 
 const bodyDimensions = document.body.getBoundingClientRect();
 const moveButtonDimensions = moveButton.getBoundingClientRect();
@@ -23,8 +23,9 @@ const text = [
 // When "YES"-Button is clicked -> Gif appears and "NO"-Button disappears
 yesButton.addEventListener("click", () => {
     question.innerHTML = "YAAYY!! I LOVE YOU TOO!"; 
-    gif.style.visibility = "visible";
     moveButton.parentNode.removeChild(moveButton);
+
+    gif.setAttribute("src", "https://media.giphy.com/media/Poc1UGfnHHZR9nDlLb/giphy.gif");
 })
 
 // When "NO"-Button is clicked -> "NO"-Button moves and text changes
@@ -39,4 +40,6 @@ moveButton.addEventListener('click', () => {
     moveButton.style.top = y + "px";
 
     question.innerHTML = text[num];
+    gif.setAttribute("src", "https://media.giphy.com/media/U99JooiWOrqhdl8ZFF/giphy.gif");
 });
+

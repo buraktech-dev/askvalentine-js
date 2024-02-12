@@ -13,11 +13,6 @@ body {
     max-width: 50%;
     height: auto;
     margin-bottom: 30px;
-    visibility: hidden;
-}
-
-.buttoncontainer {
-    position: relative;
 }
 
 #moveButton {
